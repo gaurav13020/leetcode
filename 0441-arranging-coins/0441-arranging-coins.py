@@ -7,7 +7,7 @@ class Solution:
             coins = (mid/2)*(mid+1)
             if coins > n:
                 r = mid - 1
-            else:
+            else :
                 l = mid + 1
                 res = max(mid, res)
             
