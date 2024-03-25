@@ -38,8 +38,9 @@ class Solution:
                 list2 = list2.next
                 
             tail = tail.next
-        if list1:
+        while list1:
             tail.next = list1
+            break
             # list1 = list1.next
             # tail = tail.next
             
