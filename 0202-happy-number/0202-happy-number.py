@@ -13,11 +13,13 @@ class Solution:
         slow = n
         while True:
             slow = findSquare(slow)
+            if slow == 1: return True
             fast = findSquare(findSquare(fast))
             if fast == slow:
                 break
-        if slow == 1:
-            return True
+        
         return False
+    
+    
         
         
