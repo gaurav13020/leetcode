@@ -10,14 +10,27 @@ class Solution:
         Do not return anything, modify root in-place instead.
         """
         
-        current = root
-        while current:
-            if current.left:
-                predecessor = current.left
-                while predecessor.right:
-                    predecessor = predecessor.right
-                predecessor.right = current.right
-                current.right = current.left
-                current.left = None
-            current = current.right   
+        if not root:
+            return
+        
+        self.prev = None  # To keep track of the previous node
+        
+        def dfs(node):
+            if not node:
+                return
+            
+            # Store the right subtree temporarily
+            right_subtree = node.right
+            
+            # Modify the node's pointers
+            if self.prev:
+                self.prev.right = node
+                self.prev.left = None
+            self.prev = node
+            
+            # Recursively flatten left and right subtrees
+            dfs(node.left)
+            dfs(right_subtree)
+        
+        dfs(root)   
         
