@@ -9,8 +9,8 @@ class Solution:
         """
         Do not return anything, modify root in-place instead.
         """
-        if not root:
-            return
+        # Recursive approach
+        
         
         self.prev = None  # To keep track of the previous node
         
@@ -31,7 +31,9 @@ class Solution:
             dfs(node.left)
             dfs(right_subtree)
         
-        dfs(root)   
+        dfs(root)  
+        
+        # Itterative approach
         # current = root
         # while current:
         #     if current.left:
