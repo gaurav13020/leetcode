@@ -12,9 +12,7 @@ class Solution:
         r = preorder[0]
         index = 0
         
-        for i in range(len(inorder)):
-            if(inorder[i] == r):
-                index = i
+        index = inorder.index(preorder[0])
         
         node = TreeNode(r)
         node.left = self.buildTree(preorder[1:index+1], inorder[0:index])
