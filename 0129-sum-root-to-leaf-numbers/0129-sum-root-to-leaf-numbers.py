@@ -10,7 +10,7 @@ class Solution:
             if not node:
                 return 0
             
-            sum = (sum*10) + node.val
+            sum = sum * 10 + node.val
             
             if not node.left and not node.right:
                 return sum
