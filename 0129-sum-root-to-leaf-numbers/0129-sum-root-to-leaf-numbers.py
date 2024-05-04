@@ -15,5 +15,5 @@ class Solution:
             if not node.left and not node.right:
                 return sum
             
-            return (dfs(node.left, sum) + dfs(node.right, sum))
+            return dfs(node.left, sum) + dfs(node.right, sum)
         return dfs(root, 0)
