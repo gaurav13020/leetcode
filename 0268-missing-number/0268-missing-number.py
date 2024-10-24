@@ -1,6 +1,7 @@
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
         # return sum(range(len(nums) + 1)) - sum(nums) # One line version
+        
         actualSum = 0
         for i in range(len(nums)):
             actualSum += nums[i]
@@ -10,4 +11,7 @@ class Solution:
             expectedSum += i
             
         return expectedSum - actualSum
+    
+    
+    
             
