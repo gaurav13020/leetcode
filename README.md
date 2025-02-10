@@ -52,4 +52,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/gaurav13020/leetcode/tree/master/0128-longest-consecutive-sequence) |
+## Two Pointers
+|  |
+| ------- |
+| [0125-valid-palindrome](https://github.com/gaurav13020/leetcode/tree/master/0125-valid-palindrome) |
+## String
+|  |
+| ------- |
+| [0125-valid-palindrome](https://github.com/gaurav13020/leetcode/tree/master/0125-valid-palindrome) |
 <!---LeetCode Topics End-->
